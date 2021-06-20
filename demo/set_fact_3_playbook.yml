@@ -1,1 +1,15 @@
+---
+- hosts: localhost
+  tasks:
+    - name: Set our installation variables from Ubuntu
+      set_fact:
+        webserver_application_port: 8080
+        webserver_application_path: /local/nginx
+        webserver_application_user: nginx
+      when: ansible_distribution == 'Ubuntu
 
+    - name: Show the facts
+      debug:
+        msg: "webserver_application_port:{{webserver_application_port}} webserver_application_path:{{webserver_application_path}} weserver_application_user:{{webserver_application_user}}"
+    
+...
