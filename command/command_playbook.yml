@@ -3,9 +3,7 @@
   
   tasks:
   - name: ensure file exists
-    apt: 
-      name: php7.2=7.2.3-1ubuntu1
-      command: touch /tmp/test_file
+    command: touch /tmp/test_file
       
     
 ...
