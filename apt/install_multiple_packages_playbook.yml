@@ -1,1 +1,14 @@
-state=latest
+---
+- hosts: all
+  
+  tasks:
+  - name: install php7.2 and php7.2-mysql
+    apt: 
+      name: 
+        - php7.2
+        - php7.2-mysql
+      state: present
+      update_cache: yes 
+    become: yes
+    
+...
