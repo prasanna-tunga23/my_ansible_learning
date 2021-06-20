@@ -5,9 +5,9 @@
       group_by:
         key: "custom_{{ ansible_distribution | lower}}"
         
-- hosts: custom_ubuntu
+- hosts: custom_localhost
   tasks:
-    - name: ping all in custom_ubuntu
+    - name: ping all in custom_localhost
       ping:
         
        
