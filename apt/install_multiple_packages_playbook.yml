@@ -8,7 +8,7 @@
         - php7.2
         - php7.2-mysql
       state: present
-      update_cache: yes 
-    become: yes
+      update_cache: true 
+    become: true
     
 ...
