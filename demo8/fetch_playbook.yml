@@ -3,8 +3,8 @@
   tasks:
     - name: Fetch /etc/python-release
       fetch:
-        src: /etc/python3.6
-        dest: /tmp/python3.6
+        src: /etc/shells
+        dest: /tmp/shells
 
        
 ...
