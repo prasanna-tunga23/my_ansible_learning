@@ -6,7 +6,7 @@
         webserver_application_port: 8080
         webserver_application_path: /local/nginx
         webserver_application_user: nginx
-      when: ansible_distribution == 'Ubuntu
+      when: ansible_distribution == 'Ubuntu'
 
     - name: Show the facts
       debug:
