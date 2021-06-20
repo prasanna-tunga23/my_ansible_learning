@@ -1,0 +1,8 @@
+---
+- hosts: localhost
+  tasks:
+    - name: Prompt user to verify before continuing
+      pause:
+        prompt: Do you like to continue? if yes:press enter 
+       
+...
