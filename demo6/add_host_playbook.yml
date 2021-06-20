@@ -1,0 +1,16 @@
+---
+- hosts: localhost
+  tasks:
+    - name: Add Ubuntu to adhoc_group
+      add_host:
+        name: Ubuntu
+        groups: adhoc_group1,adhoc_group2
+- hosts: adhoc_group1
+  tasks:
+    - name: ping all in adhoc_group1
+      ping:
+        
+       
+...
+       
+...
