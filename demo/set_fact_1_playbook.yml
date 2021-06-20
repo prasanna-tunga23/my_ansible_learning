@@ -1,0 +1,11 @@
+---
+- hosts: localhost
+  tasks:
+    - name: Set a fact
+      set_fact:
+        our_fact: Hello Ansible
+
+    - name: Show our fact
+      debug:
+        msg: "{{our_fact}}"
+...
