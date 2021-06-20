@@ -1,0 +1,8 @@
+---
+- hosts: localhost
+  tasks:
+    - name: Pause a playbook for 10 seconds
+      pause:
+        seconds: 10
+       
+...
