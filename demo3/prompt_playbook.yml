@@ -3,6 +3,6 @@
   tasks:
     - name: Prompt user to verify before continuing
       pause:
-        prompt: Do you like to continue? if yes:press enter 
+        prompt: Please check the webserver is running. then press enter 
        
 ...
