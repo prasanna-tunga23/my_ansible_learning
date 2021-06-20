@@ -6,7 +6,7 @@
     apt: 
       name: php7.2
       state: present
-      update_cache: yes 
-    become: yes
+      update_cache: true 
+    become: true
     
 ...
