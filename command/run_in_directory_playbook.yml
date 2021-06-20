@@ -7,7 +7,7 @@
       path: /tmp/test_dir
       state: directory
   - name: ensure file exists
-    command: echo "hello world" test_file3
+    command: touch test_file3
     args:
       chdir: /tmp/test_dir 
     
