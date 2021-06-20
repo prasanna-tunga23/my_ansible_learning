@@ -1,1 +1,14 @@
-
+---
+- hosts: all
+  tasks:
+    - name: create group based on ansible_distribution
+      group_by:
+        key: "custom_{{ ansible_distribution | lower}}"
+        
+- hosts: custom_Ubuntu
+  tasks:
+    - name: ping all in custom_Ubuntu
+      ping:
+        
+       
+...
