@@ -2,7 +2,7 @@
 - hosts: all
   
   tasks:
-  - name: install php7.2
+  - name: ensure file exists
     shell: echo "hello" > /tmp/test_file2
     register: command_output
   -debug: var=command_output
