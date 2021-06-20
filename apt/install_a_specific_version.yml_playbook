@@ -1,1 +1,13 @@
+---
+- hosts: all
+  
+  tasks:
+  - name: install php7.2
+    apt: 
+      name: php7.2=7.2.3-1ubuntu1
+      state: present
+      update_cache: yes 
+    become: yes
+    
+...
 
