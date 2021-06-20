@@ -1,1 +1,9 @@
-
+---
+- hosts: localhost
+  tasks:
+    - name: assemble conf.d to sshd_config
+      assemble:
+        src: conf.d
+        dest: sshd_config
+       
+...
