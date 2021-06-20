@@ -1,0 +1,10 @@
+---
+- hosts: localhost
+  tasks:
+    - name: Fetch /etc/python-release
+      fetch:
+        src: /etc/python-release
+        dest: /tmp/python-release
+
+       
+...
