@@ -1,0 +1,12 @@
+---
+- hosts: all
+  
+  tasks:
+  - name: install php7.2
+    apt: 
+      name: php7.2
+      state: latest
+      update_cache: yes 
+    become: yes
+    
+...
