@@ -2,9 +2,9 @@
 - hosts: all
   
   tasks:
-  - name: remove php7.2
+  - name: remove php7.2-mysql
     apt: 
-      name: php7.2
+      name: php7.2-mysql
       state: absent
       autoremove: true 
     become: true
