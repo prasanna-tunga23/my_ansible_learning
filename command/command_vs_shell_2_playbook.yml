@@ -5,6 +5,6 @@
   - name: ensure file exists
     shell: echo "hello" > /tmp/test_file2
     register: command_output
-  -debug: var=command_output
+  - debug: var=command_output
     
 ...
