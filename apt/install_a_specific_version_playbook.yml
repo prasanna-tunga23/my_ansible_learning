@@ -6,8 +6,8 @@
     apt: 
       name: php7.2=7.2.3-1ubuntu1
       state: present
-      update_cache: yes 
-    become: yes
+      update_cache: true 
+    become: true
     
 ...
 
