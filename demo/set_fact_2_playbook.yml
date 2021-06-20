@@ -4,7 +4,7 @@
     - name: Set a fact
       set_fact:
         our_fact: Hello Ansible
-        ansible_distribution: "{{Rakuten_Intern |upper}}"
+        ansible_distribution: "{{ ansible_distribution | upper}}"
 
     - name: Show our fact
       debug:
