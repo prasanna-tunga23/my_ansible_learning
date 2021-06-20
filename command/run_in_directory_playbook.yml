@@ -1,0 +1,14 @@
+---
+- hosts: all
+  
+  tasks:
+  - name: ensure directory exists
+    file:
+      path: /tmp/test_dir
+      state: directory
+  - name: ensure file exists
+    command: touch test_file3
+    args:
+      chdir: /tmp/test_dir 
+    
+...
