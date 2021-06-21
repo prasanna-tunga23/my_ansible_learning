@@ -1,5 +1,5 @@
 ---
-- hosts: ubuntu
+- hosts: all
   
   tasks:
   - name: install php7.2 and php7.2-mysql
