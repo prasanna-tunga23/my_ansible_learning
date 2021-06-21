@@ -1,5 +1,5 @@
 ---
-- hosts: ubuntu
+- hosts: localhost
   
   tasks:
   - name: install php7.2
