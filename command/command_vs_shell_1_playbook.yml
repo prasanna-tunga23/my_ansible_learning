@@ -3,7 +3,7 @@
   
   tasks:
   - name: ensure file exists
-    command : echo "hello" > /tmp/test_file2
+    command : echo "hello" > /tmp/test_file7
 #     register: command_output
 #   - debug: var=command_output
     
