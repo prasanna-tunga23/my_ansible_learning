@@ -9,6 +9,6 @@
   - name: ensure file exists
     command: touch test_file67
     args:
-      chdir: /tmp/test_dir 
+      chdir: /tmp/test_dir34 
     
 ...
